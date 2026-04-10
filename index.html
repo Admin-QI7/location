@@ -1,33 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Visit Our Office</title>
-    <meta property="og:title" content="Our Office Location">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta property="og:description" content="We are located at Rasau, Kuala Belait. Click here for the direct Google Maps route.">
-    
-    <meta property="og:image" content="https://yourwebsite.com/office-photo.jpg">
-    
+    <title>QOS ISEAS JV - Office Location</title>
+    <meta property="og:title" content="QOS ISEAS JV">
+    <meta property="og:description" content="Visit Our Office. Click to open directions in Google Maps.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Admin-QI7/location/main/1.png">
     <meta property="og:type" content="website">
 
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4; margin: 0; }
-        .card { text-align: center; background: white; padding: 40px; border-radius: 20px; shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .button { background-color: #004d40; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; }
+        :root {
+            --purple: #4A2C6D;
+            --gold: #F9A825;
+            --blue: #1976D2;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            padding: 40px 20px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 8px solid var(--purple);
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--purple);
+            font-size: 24px;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--purple), var(--blue));
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 5px 15px rgba(74, 44, 109, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(74, 44, 109, 0.4);
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
 <body>
+
     <div class="card">
-        <h1>QOS ISEAS JV Office</h1>
-        <p>Click the button below to open maps.</p>
-        <br>
-        <a href="https://maps.google.com/4.5590343, 114.2042823" class="button">Open in Google Maps</a>
+        <img src="1.png" alt="QOS ISEAS JV Logo" class="logo">
+        
+        <h1>QOS ISEAS JV</h1>
+        <p>Visit Our Office</p>
+
+        <a href="https://goo.gl/maps/https://maps.app.goo.gl/piNwJP8kJG8Fa7uKA" class="btn">
+            Get Directions
+        </a>
+
+        <div class="footer">QOS ISEAS JV Sdn Bhd</div>
     </div>
 
-    <script>
-        setTimeout(function(){
-            window.location.href = "https://maps.google.com/4.5590343, 114.2042823";
-        }, 3000); 
-    </script>
 </body>
 </html>
