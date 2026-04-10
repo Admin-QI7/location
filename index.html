@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visit Our Office</title>
+    <meta property="og:title" content="Our Office Location - Come Say Hi!">
+    
+    <meta property="og:description" content="We are located at [Your Area]. Click here for the direct Google Maps route.">
+    
+    <meta property="og:image" content="https://yourwebsite.com/office-photo.jpg">
+    
+    <meta property="og:type" content="website">
+
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4; margin: 0; }
+        .card { text-align: center; background: white; padding: 40px; border-radius: 20px; shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .button { background-color: #004d40; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>You're Invited!</h1>
+        <p>Click the button below to open maps.</p>
+        <br>
+        <a href="https://maps.google.com/your-coordinates" class="button">Open in Google Maps</a>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            window.location.href = "https://maps.google.com/your-coordinates";
+        }, 3000); 
+    </script>
+</body>
+</html>
